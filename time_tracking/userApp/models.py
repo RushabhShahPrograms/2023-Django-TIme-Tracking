@@ -29,7 +29,7 @@ class User(models.Model):
     gender=models.CharField(choices=genderChoice,max_length=30)
     joining_date=models.DateField()
     birth_date=models.DateField()
-    rolename=models.ForeignKey(Role,on_delete=models.CASCADE)
+    #rolename=models.ForeignKey(Role,on_delete=models.CASCADE)
 
     class Meta:
         db_table='user'
@@ -63,4 +63,3 @@ class User_Task(models.Model):
 
     def __str__(self):
         return self.user_id,self.task_id
-    
