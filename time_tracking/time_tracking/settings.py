@@ -75,6 +75,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'time_tracking.wsgi.application'
+AUTH_USER_MODEL = 'user.User'
 
 
 # Database
